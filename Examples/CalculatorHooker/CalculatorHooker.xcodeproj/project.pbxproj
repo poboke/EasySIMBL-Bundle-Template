@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C58F9B9E1B0C1C3600B45CC1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58F9B9D1B0C1C3600B45CC1 /* AppKit.framework */; };
+		C58F9BA01B0C1C3600B45CC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58F9B9F1B0C1C3600B45CC1 /* Foundation.framework */; };
+		C58F9BA61B0C1C3600B45CC1 /* CalculatorHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58F9BA51B0C1C3600B45CC1 /* CalculatorHooker.m */; };
+		C5BA55011C7031B2002ACFCC /* CalculatorController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BA54FF1C7031B2002ACFCC /* CalculatorController+Hook.m */; };
+		C5BA55041C7031E9002ACFCC /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BA55031C7031E9002ACFCC /* JRSwizzle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C58F9B9A1B0C1C3600B45CC1 /* CalculatorHooker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorHooker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58F9B9D1B0C1C3600B45CC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		C58F9B9F1B0C1C3600B45CC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		C58F9BA31B0C1C3600B45CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58F9BA41B0C1C3600B45CC1 /* CalculatorHooker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorHooker.h; sourceTree = "<group>"; };
+		C58F9BA51B0C1C3600B45CC1 /* CalculatorHooker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorHooker.m; sourceTree = "<group>"; };
+		C58F9BAB1B0C1C3600B45CC1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C5BA54FC1C7031B2002ACFCC /* CalculatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorController.h; sourceTree = "<group>"; };
+		C5BA54FE1C7031B2002ACFCC /* CalculatorController+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorController+Hook.h"; sourceTree = "<group>"; };
+		C5BA54FF1C7031B2002ACFCC /* CalculatorController+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CalculatorController+Hook.m"; sourceTree = "<group>"; };
+		C5BA55021C7031E9002ACFCC /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		C5BA55031C7031E9002ACFCC /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C58F9B971B0C1C3600B45CC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58F9B9E1B0C1C3600B45CC1 /* AppKit.framework in Frameworks */,
+				C58F9BA01B0C1C3600B45CC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C58F9B911B0C1C3600B45CC1 = {
+			isa = PBXGroup;
+			children = (
+				C58F9BA11B0C1C3600B45CC1 /* CalculatorHooker */,
+				C58F9B9C1B0C1C3600B45CC1 /* Frameworks */,
+				C58F9B9B1B0C1C3600B45CC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C58F9B9B1B0C1C3600B45CC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C58F9B9A1B0C1C3600B45CC1 /* CalculatorHooker.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C58F9B9C1B0C1C3600B45CC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C58F9B9D1B0C1C3600B45CC1 /* AppKit.framework */,
+				C58F9B9F1B0C1C3600B45CC1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C58F9BA11B0C1C3600B45CC1 /* CalculatorHooker */ = {
+			isa = PBXGroup;
+			children = (
+				C58F9BA41B0C1C3600B45CC1 /* CalculatorHooker.h */,
+				C58F9BA51B0C1C3600B45CC1 /* CalculatorHooker.m */,
+				C5BA54FD1C7031B2002ACFCC /* HookClasses */,
+				C5BA54FB1C7031B2002ACFCC /* Headers */,
+				C5BA55001C7031B2002ACFCC /* JRSwizzle */,
+				C58F9BA21B0C1C3600B45CC1 /* Supporting Files */,
+			);
+			path = CalculatorHooker;
+			sourceTree = "<group>";
+		};
+		C58F9BA21B0C1C3600B45CC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C58F9BA31B0C1C3600B45CC1 /* Info.plist */,
+				C58F9BAB1B0C1C3600B45CC1 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5BA54FB1C7031B2002ACFCC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C5BA54FC1C7031B2002ACFCC /* CalculatorController.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C5BA54FD1C7031B2002ACFCC /* HookClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C5BA54FE1C7031B2002ACFCC /* CalculatorController+Hook.h */,
+				C5BA54FF1C7031B2002ACFCC /* CalculatorController+Hook.m */,
+			);
+			path = HookClasses;
+			sourceTree = "<group>";
+		};
+		C5BA55001C7031B2002ACFCC /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C5BA55021C7031E9002ACFCC /* JRSwizzle.h */,
+				C5BA55031C7031E9002ACFCC /* JRSwizzle.m */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C58F9B991B0C1C3600B45CC1 /* CalculatorHooker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58F9BAF1B0C1C3600B45CC1 /* Build configuration list for PBXNativeTarget "CalculatorHooker" */;
+			buildPhases = (
+				C58F9B961B0C1C3600B45CC1 /* Sources */,
+				C58F9B971B0C1C3600B45CC1 /* Frameworks */,
+				C58F9B981B0C1C3600B45CC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculatorHooker;
+			productName = CalculatorHooker;
+			productReference = C58F9B9A1B0C1C3600B45CC1 /* CalculatorHooker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C58F9B921B0C1C3600B45CC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jobs;
+				TargetAttributes = {
+					C58F9B991B0C1C3600B45CC1 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C58F9B951B0C1C3600B45CC1 /* Build configuration list for PBXProject "CalculatorHooker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C58F9B911B0C1C3600B45CC1;
+			productRefGroup = C58F9B9B1B0C1C3600B45CC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C58F9B991B0C1C3600B45CC1 /* CalculatorHooker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C58F9B981B0C1C3600B45CC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C58F9B961B0C1C3600B45CC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5BA55011C7031B2002ACFCC /* CalculatorController+Hook.m in Sources */,
+				C5BA55041C7031E9002ACFCC /* JRSwizzle.m in Sources */,
+				C58F9BA61B0C1C3600B45CC1 /* CalculatorHooker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C58F9BAD1B0C1C3600B45CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C58F9BAE1B0C1C3600B45CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		C58F9BB01B0C1C3600B45CC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalculatorHooker/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.poboke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C58F9BB11B0C1C3600B45CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalculatorHooker/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.poboke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C58F9B951B0C1C3600B45CC1 /* Build configuration list for PBXProject "CalculatorHooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58F9BAD1B0C1C3600B45CC1 /* Debug */,
+				C58F9BAE1B0C1C3600B45CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58F9BAF1B0C1C3600B45CC1 /* Build configuration list for PBXNativeTarget "CalculatorHooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58F9BB01B0C1C3600B45CC1 /* Debug */,
+				C58F9BB11B0C1C3600B45CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C58F9B921B0C1C3600B45CC1 /* Project object */;
+}

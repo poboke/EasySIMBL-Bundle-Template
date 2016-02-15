@@ -75,7 +75,7 @@
             <key>Identifier</key>
             <string>SimblTargetAppBundleId</string>
             <key>Name</key>
-            <string>Target App Bundle Id</string>
+            <string>Target App Bundle Id:</string>
             <key>Description</key>
             <string>Target App Bundle Id.</string>
             <key>Type</key>
