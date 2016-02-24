@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C551D3081C630E950060C263 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551D3071C630E950060C263 /* AppKit.framework */; };
+		C551D30A1C630E950060C263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551D3091C630E950060C263 /* Foundation.framework */; };
+		C551D30E1C630E950060C263 /* WifiMasterKeyHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D30D1C630E950060C263 /* WifiMasterKeyHooker.m */; };
+		C551D3201C63139A0060C263 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D31F1C63139A0060C263 /* JRSwizzle.m */; };
+		C551D32D1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D32C1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C551D3041C630E950060C263 /* WifiMasterKeyHooker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifiMasterKeyHooker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C551D3071C630E950060C263 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		C551D3091C630E950060C263 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		C551D30C1C630E950060C263 /* WifiMasterKeyHooker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiMasterKeyHooker.h; sourceTree = "<group>"; };
+		C551D30D1C630E950060C263 /* WifiMasterKeyHooker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiMasterKeyHooker.m; sourceTree = "<group>"; };
+		C551D3141C630E950060C263 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C551D3161C630E950060C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C551D31E1C63139A0060C263 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		C551D31F1C63139A0060C263 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		C551D32A1C631C400060C263 /* WiFiKeyAESUtilties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiFiKeyAESUtilties.h; sourceTree = "<group>"; };
+		C551D32B1C631C590060C263 /* WiFiKeyAESUtilties+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WiFiKeyAESUtilties+Hook.h"; sourceTree = "<group>"; };
+		C551D32C1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WiFiKeyAESUtilties+Hook.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C551D3011C630E950060C263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C551D3081C630E950060C263 /* AppKit.framework in Frameworks */,
+				C551D30A1C630E950060C263 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C551D2FB1C630E950060C263 = {
+			isa = PBXGroup;
+			children = (
+				C551D30B1C630E950060C263 /* WifiMasterKeyHooker */,
+				C551D3061C630E950060C263 /* Frameworks */,
+				C551D3051C630E950060C263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C551D3051C630E950060C263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C551D3041C630E950060C263 /* WifiMasterKeyHooker.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C551D3061C630E950060C263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C551D3071C630E950060C263 /* AppKit.framework */,
+				C551D3091C630E950060C263 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C551D30B1C630E950060C263 /* WifiMasterKeyHooker */ = {
+			isa = PBXGroup;
+			children = (
+				C551D30C1C630E950060C263 /* WifiMasterKeyHooker.h */,
+				C551D30D1C630E950060C263 /* WifiMasterKeyHooker.m */,
+				C551D31C1C6310DD0060C263 /* HookClasses */,
+				C551D3241C63141C0060C263 /* Headers */,
+				C551D31D1C63139A0060C263 /* JRSwizzle */,
+				C551D3131C630E950060C263 /* Supporting Files */,
+			);
+			path = WifiMasterKeyHooker;
+			sourceTree = "<group>";
+		};
+		C551D3131C630E950060C263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C551D3161C630E950060C263 /* Info.plist */,
+				C551D3141C630E950060C263 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C551D31C1C6310DD0060C263 /* HookClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C551D32B1C631C590060C263 /* WiFiKeyAESUtilties+Hook.h */,
+				C551D32C1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m */,
+			);
+			path = HookClasses;
+			sourceTree = "<group>";
+		};
+		C551D31D1C63139A0060C263 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C551D31E1C63139A0060C263 /* JRSwizzle.h */,
+				C551D31F1C63139A0060C263 /* JRSwizzle.m */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		C551D3241C63141C0060C263 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C551D32A1C631C400060C263 /* WiFiKeyAESUtilties.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C551D3031C630E950060C263 /* WifiMasterKeyHooker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C551D3191C630E950060C263 /* Build configuration list for PBXNativeTarget "WifiMasterKeyHooker" */;
+			buildPhases = (
+				C551D3001C630E950060C263 /* Sources */,
+				C551D3011C630E950060C263 /* Frameworks */,
+				C551D3021C630E950060C263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WifiMasterKeyHooker;
+			productName = WifiMasterKeyHooker;
+			productReference = C551D3041C630E950060C263 /* WifiMasterKeyHooker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C551D2FC1C630E950060C263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jobs;
+				TargetAttributes = {
+					C551D3031C630E950060C263 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = C551D2FF1C630E950060C263 /* Build configuration list for PBXProject "WifiMasterKeyHooker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C551D2FB1C630E950060C263;
+			productRefGroup = C551D3051C630E950060C263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C551D3031C630E950060C263 /* WifiMasterKeyHooker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C551D3021C630E950060C263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C551D3001C630E950060C263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C551D30E1C630E950060C263 /* WifiMasterKeyHooker.m in Sources */,
+				C551D3201C63139A0060C263 /* JRSwizzle.m in Sources */,
+				C551D32D1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C551D3171C630E950060C263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C551D3181C630E950060C263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		C551D31A1C630E950060C263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WifiMasterKeyHooker/PrefixHeader.pch;
+				INFOPLIST_FILE = WifiMasterKeyHooker/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.WifiMasterKeyHooker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C551D31B1C630E950060C263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WifiMasterKeyHooker/PrefixHeader.pch;
+				INFOPLIST_FILE = WifiMasterKeyHooker/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.WifiMasterKeyHooker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C551D2FF1C630E950060C263 /* Build configuration list for PBXProject "WifiMasterKeyHooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C551D3171C630E950060C263 /* Debug */,
+				C551D3181C630E950060C263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C551D3191C630E950060C263 /* Build configuration list for PBXNativeTarget "WifiMasterKeyHooker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C551D31A1C630E950060C263 /* Debug */,
+				C551D31B1C630E950060C263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C551D2FC1C630E950060C263 /* Project object */;
+}
