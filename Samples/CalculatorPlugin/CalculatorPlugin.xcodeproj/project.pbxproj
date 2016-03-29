@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		C58F9B9E1B0C1C3600B45CC1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58F9B9D1B0C1C3600B45CC1 /* AppKit.framework */; };
 		C58F9BA01B0C1C3600B45CC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58F9B9F1B0C1C3600B45CC1 /* Foundation.framework */; };
-		C58F9BA61B0C1C3600B45CC1 /* CalculatorHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = C58F9BA51B0C1C3600B45CC1 /* CalculatorHooker.m */; };
+		C58F9BA61B0C1C3600B45CC1 /* CalculatorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C58F9BA51B0C1C3600B45CC1 /* CalculatorPlugin.m */; };
 		C5BA55011C7031B2002ACFCC /* CalculatorController+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BA54FF1C7031B2002ACFCC /* CalculatorController+Hook.m */; };
 		C5BA55041C7031E9002ACFCC /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BA55031C7031E9002ACFCC /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C58F9B9A1B0C1C3600B45CC1 /* CalculatorHooker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorHooker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58F9B9A1B0C1C3600B45CC1 /* CalculatorPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58F9B9D1B0C1C3600B45CC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		C58F9B9F1B0C1C3600B45CC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		C58F9BA31B0C1C3600B45CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C58F9BA41B0C1C3600B45CC1 /* CalculatorHooker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorHooker.h; sourceTree = "<group>"; };
-		C58F9BA51B0C1C3600B45CC1 /* CalculatorHooker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorHooker.m; sourceTree = "<group>"; };
+		C58F9BA41B0C1C3600B45CC1 /* CalculatorPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorPlugin.h; sourceTree = "<group>"; };
+		C58F9BA51B0C1C3600B45CC1 /* CalculatorPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorPlugin.m; sourceTree = "<group>"; };
 		C58F9BAB1B0C1C3600B45CC1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C5BA54FC1C7031B2002ACFCC /* CalculatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorController.h; sourceTree = "<group>"; };
 		C5BA54FE1C7031B2002ACFCC /* CalculatorController+Hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorController+Hook.h"; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		C58F9B911B0C1C3600B45CC1 = {
 			isa = PBXGroup;
 			children = (
-				C58F9BA11B0C1C3600B45CC1 /* CalculatorHooker */,
+				C58F9BA11B0C1C3600B45CC1 /* CalculatorPlugin */,
 				C58F9B9C1B0C1C3600B45CC1 /* Frameworks */,
 				C58F9B9B1B0C1C3600B45CC1 /* Products */,
 			);
@@ -54,7 +54,7 @@
 		C58F9B9B1B0C1C3600B45CC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C58F9B9A1B0C1C3600B45CC1 /* CalculatorHooker.bundle */,
+				C58F9B9A1B0C1C3600B45CC1 /* CalculatorPlugin.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,17 +68,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C58F9BA11B0C1C3600B45CC1 /* CalculatorHooker */ = {
+		C58F9BA11B0C1C3600B45CC1 /* CalculatorPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				C58F9BA41B0C1C3600B45CC1 /* CalculatorHooker.h */,
-				C58F9BA51B0C1C3600B45CC1 /* CalculatorHooker.m */,
+				C58F9BA41B0C1C3600B45CC1 /* CalculatorPlugin.h */,
+				C58F9BA51B0C1C3600B45CC1 /* CalculatorPlugin.m */,
 				C5BA54FD1C7031B2002ACFCC /* HookClasses */,
 				C5BA54FB1C7031B2002ACFCC /* Headers */,
 				C5BA55001C7031B2002ACFCC /* JRSwizzle */,
 				C58F9BA21B0C1C3600B45CC1 /* Supporting Files */,
 			);
-			path = CalculatorHooker;
+			path = CalculatorPlugin;
 			sourceTree = "<group>";
 		};
 		C58F9BA21B0C1C3600B45CC1 /* Supporting Files */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C58F9B991B0C1C3600B45CC1 /* CalculatorHooker */ = {
+		C58F9B991B0C1C3600B45CC1 /* CalculatorPlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C58F9BAF1B0C1C3600B45CC1 /* Build configuration list for PBXNativeTarget "CalculatorHooker" */;
+			buildConfigurationList = C58F9BAF1B0C1C3600B45CC1 /* Build configuration list for PBXNativeTarget "CalculatorPlugin" */;
 			buildPhases = (
 				C58F9B961B0C1C3600B45CC1 /* Sources */,
 				C58F9B971B0C1C3600B45CC1 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = CalculatorHooker;
-			productName = CalculatorHooker;
-			productReference = C58F9B9A1B0C1C3600B45CC1 /* CalculatorHooker.bundle */;
+			name = CalculatorPlugin;
+			productName = CalculatorPlugin;
+			productReference = C58F9B9A1B0C1C3600B45CC1 /* CalculatorPlugin.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C58F9B951B0C1C3600B45CC1 /* Build configuration list for PBXProject "CalculatorHooker" */;
+			buildConfigurationList = C58F9B951B0C1C3600B45CC1 /* Build configuration list for PBXProject "CalculatorPlugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C58F9B991B0C1C3600B45CC1 /* CalculatorHooker */,
+				C58F9B991B0C1C3600B45CC1 /* CalculatorPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -184,7 +184,7 @@
 			files = (
 				C5BA55011C7031B2002ACFCC /* CalculatorController+Hook.m in Sources */,
 				C5BA55041C7031E9002ACFCC /* JRSwizzle.m in Sources */,
-				C58F9BA61B0C1C3600B45CC1 /* CalculatorHooker.m in Sources */,
+				C58F9BA61B0C1C3600B45CC1 /* CalculatorPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +270,7 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CalculatorHooker/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = CalculatorPlugin/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
 				MACH_O_TYPE = mh_dylib;
@@ -287,7 +287,7 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CalculatorHooker/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = CalculatorPlugin/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
 				MACH_O_TYPE = mh_dylib;
@@ -300,7 +300,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C58F9B951B0C1C3600B45CC1 /* Build configuration list for PBXProject "CalculatorHooker" */ = {
+		C58F9B951B0C1C3600B45CC1 /* Build configuration list for PBXProject "CalculatorPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C58F9BAD1B0C1C3600B45CC1 /* Debug */,
@@ -309,7 +309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C58F9BAF1B0C1C3600B45CC1 /* Build configuration list for PBXNativeTarget "CalculatorHooker" */ = {
+		C58F9BAF1B0C1C3600B45CC1 /* Build configuration list for PBXNativeTarget "CalculatorPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C58F9BB01B0C1C3600B45CC1 /* Debug */,

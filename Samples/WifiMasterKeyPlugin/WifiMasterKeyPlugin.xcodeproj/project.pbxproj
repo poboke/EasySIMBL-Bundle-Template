@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		C551D3081C630E950060C263 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551D3071C630E950060C263 /* AppKit.framework */; };
 		C551D30A1C630E950060C263 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C551D3091C630E950060C263 /* Foundation.framework */; };
-		C551D30E1C630E950060C263 /* WifiMasterKeyHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D30D1C630E950060C263 /* WifiMasterKeyHooker.m */; };
+		C551D30E1C630E950060C263 /* WifiMasterKeyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D30D1C630E950060C263 /* WifiMasterKeyPlugin.m */; };
 		C551D3201C63139A0060C263 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D31F1C63139A0060C263 /* JRSwizzle.m */; };
 		C551D32D1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = C551D32C1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C551D3041C630E950060C263 /* WifiMasterKeyHooker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifiMasterKeyHooker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C551D3041C630E950060C263 /* WifiMasterKeyPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifiMasterKeyPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C551D3071C630E950060C263 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		C551D3091C630E950060C263 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		C551D30C1C630E950060C263 /* WifiMasterKeyHooker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiMasterKeyHooker.h; sourceTree = "<group>"; };
-		C551D30D1C630E950060C263 /* WifiMasterKeyHooker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiMasterKeyHooker.m; sourceTree = "<group>"; };
+		C551D30C1C630E950060C263 /* WifiMasterKeyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiMasterKeyPlugin.h; sourceTree = "<group>"; };
+		C551D30D1C630E950060C263 /* WifiMasterKeyPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiMasterKeyPlugin.m; sourceTree = "<group>"; };
 		C551D3141C630E950060C263 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C551D3161C630E950060C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C551D31E1C63139A0060C263 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		C551D2FB1C630E950060C263 = {
 			isa = PBXGroup;
 			children = (
-				C551D30B1C630E950060C263 /* WifiMasterKeyHooker */,
+				C551D30B1C630E950060C263 /* WifiMasterKeyPlugin */,
 				C551D3061C630E950060C263 /* Frameworks */,
 				C551D3051C630E950060C263 /* Products */,
 			);
@@ -54,7 +54,7 @@
 		C551D3051C630E950060C263 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C551D3041C630E950060C263 /* WifiMasterKeyHooker.bundle */,
+				C551D3041C630E950060C263 /* WifiMasterKeyPlugin.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,17 +68,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C551D30B1C630E950060C263 /* WifiMasterKeyHooker */ = {
+		C551D30B1C630E950060C263 /* WifiMasterKeyPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				C551D30C1C630E950060C263 /* WifiMasterKeyHooker.h */,
-				C551D30D1C630E950060C263 /* WifiMasterKeyHooker.m */,
+				C551D30C1C630E950060C263 /* WifiMasterKeyPlugin.h */,
+				C551D30D1C630E950060C263 /* WifiMasterKeyPlugin.m */,
 				C551D31C1C6310DD0060C263 /* HookClasses */,
 				C551D3241C63141C0060C263 /* Headers */,
 				C551D31D1C63139A0060C263 /* JRSwizzle */,
 				C551D3131C630E950060C263 /* Supporting Files */,
 			);
-			path = WifiMasterKeyHooker;
+			path = WifiMasterKeyPlugin;
 			sourceTree = "<group>";
 		};
 		C551D3131C630E950060C263 /* Supporting Files */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C551D3031C630E950060C263 /* WifiMasterKeyHooker */ = {
+		C551D3031C630E950060C263 /* WifiMasterKeyPlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C551D3191C630E950060C263 /* Build configuration list for PBXNativeTarget "WifiMasterKeyHooker" */;
+			buildConfigurationList = C551D3191C630E950060C263 /* Build configuration list for PBXNativeTarget "WifiMasterKeyPlugin" */;
 			buildPhases = (
 				C551D3001C630E950060C263 /* Sources */,
 				C551D3011C630E950060C263 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = WifiMasterKeyHooker;
-			productName = WifiMasterKeyHooker;
-			productReference = C551D3041C630E950060C263 /* WifiMasterKeyHooker.bundle */;
+			name = WifiMasterKeyPlugin;
+			productName = WifiMasterKeyPlugin;
+			productReference = C551D3041C630E950060C263 /* WifiMasterKeyPlugin.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C551D2FF1C630E950060C263 /* Build configuration list for PBXProject "WifiMasterKeyHooker" */;
+			buildConfigurationList = C551D2FF1C630E950060C263 /* Build configuration list for PBXProject "WifiMasterKeyPlugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C551D3031C630E950060C263 /* WifiMasterKeyHooker */,
+				C551D3031C630E950060C263 /* WifiMasterKeyPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C551D30E1C630E950060C263 /* WifiMasterKeyHooker.m in Sources */,
+				C551D30E1C630E950060C263 /* WifiMasterKeyPlugin.m in Sources */,
 				C551D3201C63139A0060C263 /* JRSwizzle.m in Sources */,
 				C551D32D1C631C590060C263 /* WiFiKeyAESUtilties+Hook.m in Sources */,
 			);
@@ -271,11 +271,11 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WifiMasterKeyHooker/PrefixHeader.pch;
-				INFOPLIST_FILE = WifiMasterKeyHooker/Info.plist;
+				GCC_PREFIX_HEADER = WifiMasterKeyPlugin/PrefixHeader.pch;
+				INFOPLIST_FILE = WifiMasterKeyPlugin/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
 				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.WifiMasterKeyHooker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.WifiMasterKeyPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -288,11 +288,11 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WifiMasterKeyHooker/PrefixHeader.pch;
-				INFOPLIST_FILE = WifiMasterKeyHooker/Info.plist;
+				GCC_PREFIX_HEADER = WifiMasterKeyPlugin/PrefixHeader.pch;
+				INFOPLIST_FILE = WifiMasterKeyPlugin/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
 				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.WifiMasterKeyHooker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.WifiMasterKeyPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -301,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C551D2FF1C630E950060C263 /* Build configuration list for PBXProject "WifiMasterKeyHooker" */ = {
+		C551D2FF1C630E950060C263 /* Build configuration list for PBXProject "WifiMasterKeyPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C551D3171C630E950060C263 /* Debug */,
@@ -310,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C551D3191C630E950060C263 /* Build configuration list for PBXNativeTarget "WifiMasterKeyHooker" */ = {
+		C551D3191C630E950060C263 /* Build configuration list for PBXNativeTarget "WifiMasterKeyPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C551D31A1C630E950060C263 /* Debug */,

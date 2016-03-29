@@ -1,27 +1,27 @@
 //
-//  CalculatorHooker.m
-//  CalculatorHooker
+//  CalculatorPlugin.m
+//  CalculatorPlugin
 //
 //  Created by Jobs on 16/2/14.
 //  Copyright (c) 2015年 Jobs. All rights reserved.
 //
 
-#import "CalculatorHooker.h"
+#import "CalculatorPlugin.h"
 #import "CalculatorController+Hook.h"
 
-@interface CalculatorHooker()
+@interface CalculatorPlugin()
 
 @end
 
 
-@implementation CalculatorHooker
+@implementation CalculatorPlugin
 
 /**
  * @return the single static instance of the plugin object
  */
 + (instancetype)sharedInstance
 {
-    static CalculatorHooker *plugin = nil;
+    static CalculatorPlugin *plugin = nil;
     @synchronized(self) {
         if (!plugin) {
             plugin = [[self alloc] init];
@@ -36,7 +36,7 @@
  */
 + (void)load
 {
-    CalculatorHooker *plugin = [CalculatorHooker sharedInstance];
+    CalculatorPlugin *plugin = [CalculatorPlugin sharedInstance];
     NSLog(@"++++++++ %@ plugin loaded ++++++++", plugin);
     
     [NSClassFromString(@"CalculatorController") hook_CalculatorController];

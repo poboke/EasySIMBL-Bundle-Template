@@ -1,13 +1,13 @@
 //
 //  PrefixHeader.pch
-//  WifiMasterKeyHooker
+//  WifiMasterKeyPlugin
 //
 //  Created by Jobs on 16/2/4.
 //  Copyright © 2016年 Jobs. All rights reserved.
 //
 
-#ifndef WifiMasterKeyHooker_PrefixHeader_pch
-#define WifiMasterKeyHooker_PrefixHeader_pch
+#ifndef WifiMasterKeyPlugin_PrefixHeader_pch
+#define WifiMasterKeyPlugin_PrefixHeader_pch
 
 #import <Cocoa/Cocoa.h>
 #import "JRSwizzle.h"

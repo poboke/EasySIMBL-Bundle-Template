@@ -1,27 +1,27 @@
 //
-//  WifiMasterKeyHooker.m
-//  WifiMasterKeyHooker
+//  WifiMasterKeyPlugin.m
+//  WifiMasterKeyPlugin
 //
 //  Created by Jobs on 16/2/4.
 //  Copyright © 2016年 Jobs. All rights reserved.
 //
 
-#import "WifiMasterKeyHooker.h"
+#import "WifiMasterKeyPlugin.h"
 #import "WiFiKeyAESUtilties+Hook.h"
 
-@interface WifiMasterKeyHooker()
+@interface WifiMasterKeyPlugin()
 
 @end
 
 
-@implementation WifiMasterKeyHooker
+@implementation WifiMasterKeyPlugin
 
 /**
  * @return the single static instance of the plugin object
  */
 + (instancetype)sharedInstance
 {
-    static WifiMasterKeyHooker *plugin = nil;
+    static WifiMasterKeyPlugin *plugin = nil;
     @synchronized(self) {
         if (!plugin) {
             plugin = [[self alloc] init];
@@ -36,7 +36,7 @@
  */
 + (void)load
 {
-    WifiMasterKeyHooker *plugin = [WifiMasterKeyHooker sharedInstance];
+    WifiMasterKeyPlugin *plugin = [WifiMasterKeyPlugin sharedInstance];
     NSLog(@"++++++++ %@ plugin loaded ++++++++", plugin);
     
     [NSClassFromString(@"WiFiKeyAESUtilties") hook_WiFiKeyAESUtilties];
