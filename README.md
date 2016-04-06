@@ -6,15 +6,15 @@ This template builds an EasySIMBL bundle.
 
 ## How to use
 
-Open Xcode and in the new project wizard you should see `EasySIMBL Bundle` under the `OS X` section.
+1. Open Xcode and in the new project wizard you should see `EasySIMBL Bundle` under the `OS X` section.
 
 ![image](https://github.com/poboke/EasySIMBL-Bundle-Template/raw/master/Screenshots/about.png)
 
-Click the `next` button and write the options of the project:
+2. Click the `next` button and write the options of the project:
 
 ![image](https://github.com/poboke/EasySIMBL-Bundle-Template/raw/master/Screenshots/options.png)
 
-And then remove the `Info.plist` and `PrefixHeader.pch` in the `Copy Bundle Resources`.
+3. And then remove the `Info.plist` and `PrefixHeader.pch` in the `Copy Bundle Resources`.
 
 ![image](https://github.com/poboke/EasySIMBL-Bundle-Template/raw/master/Screenshots/resources.png)
 
