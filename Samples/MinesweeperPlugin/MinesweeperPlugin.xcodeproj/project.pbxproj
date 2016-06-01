@@ -273,7 +273,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = "$(HOME)";
+				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MinesweeperPlugin/PrefixHeader.pch;
 				INFOPLIST_FILE = MinesweeperPlugin/Info.plist;
@@ -292,7 +292,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = "$(HOME)";
+				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MinesweeperPlugin/PrefixHeader.pch;
 				INFOPLIST_FILE = MinesweeperPlugin/Info.plist;
@@ -323,6 +323,7 @@
 				C5F8EB161CB4F5F900E5FB6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

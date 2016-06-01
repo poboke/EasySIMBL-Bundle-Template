@@ -34,7 +34,7 @@
                 <key>DEPLOYMENT_LOCATION</key>
                 <string>YES</string>
                 <key>DSTROOT</key>
-                <string>$(HOME)</string>
+                <string>/</string>
                 <key>INSTALL_PATH</key>
                 <string>/Library/Application Support/SIMBL/Plugins</string>
                 <key>WRAPPER_EXTENSION</key>

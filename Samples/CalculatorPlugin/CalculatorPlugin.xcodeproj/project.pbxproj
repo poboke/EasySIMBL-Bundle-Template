@@ -268,7 +268,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = "$(HOME)";
+				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CalculatorPlugin/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -285,7 +285,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = "$(HOME)";
+				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CalculatorPlugin/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
