@@ -14,7 +14,7 @@
 {
     [self jr_swizzleMethod:@selector(showAbout:)
                 withMethod:@selector(hook_showAbout:)
-                     error:nil];
+                     error:NULL];
 }
 
 

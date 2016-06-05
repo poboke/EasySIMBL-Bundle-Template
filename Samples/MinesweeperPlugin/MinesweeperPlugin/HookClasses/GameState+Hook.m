@@ -14,10 +14,10 @@
 {
     [self jr_swizzleMethod:@selector(fullgame)
                 withMethod:@selector(hook_fullgame)
-                     error:nil];
+                     error:NULL];
     [self jr_swizzleMethod:@selector(robot)
                 withMethod:@selector(hook_robot)
-                     error:nil];
+                     error:NULL];
 }
 
 

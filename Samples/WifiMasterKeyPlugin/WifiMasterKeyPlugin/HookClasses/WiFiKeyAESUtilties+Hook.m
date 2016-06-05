@@ -14,7 +14,7 @@
 {
     [self jr_swizzleClassMethod:@selector(ShareKeyAES128Decry:)
                 withClassMethod:@selector(hook_ShareKeyAES128Decry:)
-                     error:nil];
+                     error:NULL];
 }
 
 
