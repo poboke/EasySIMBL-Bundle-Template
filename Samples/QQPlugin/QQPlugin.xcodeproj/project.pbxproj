@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5AA7A761D8AFA1300210A09 /* MQAIOSelfInfoViewController2+ BusyStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA7A741D8AFA1300210A09 /* MQAIOSelfInfoViewController2+ BusyStatus.m */; };
+		C5AA7A791D8AFA1C00210A09 /* MQAIOChatTootKitViewController+ SendPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA7A771D8AFA1C00210A09 /* MQAIOChatTootKitViewController+ SendPicture.m */; };
+		C5D0046A1D770101000C018B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D004691D770101000C018B /* AppKit.framework */; };
+		C5D0046C1D770101000C018B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D0046B1D770101000C018B /* Foundation.framework */; };
+		C5D004701D770101000C018B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5D0046F1D770101000C018B /* Info.plist */; };
+		C5D004731D770101000C018B /* QQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D004721D770101000C018B /* QQPlugin.m */; };
+		C5D004771D770101000C018B /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D004761D770101000C018B /* JRSwizzle.m */; };
+		C5D004791D770101000C018B /* PrefixHeader.pch in Resources */ = {isa = PBXBuildFile; fileRef = C5D004781D770101000C018B /* PrefixHeader.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5AA7A741D8AFA1300210A09 /* MQAIOSelfInfoViewController2+ BusyStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MQAIOSelfInfoViewController2+ BusyStatus.m"; sourceTree = "<group>"; };
+		C5AA7A751D8AFA1300210A09 /* MQAIOSelfInfoViewController2+BusyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQAIOSelfInfoViewController2+BusyStatus.h"; sourceTree = "<group>"; };
+		C5AA7A771D8AFA1C00210A09 /* MQAIOChatTootKitViewController+ SendPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MQAIOChatTootKitViewController+ SendPicture.m"; sourceTree = "<group>"; };
+		C5AA7A781D8AFA1C00210A09 /* MQAIOChatTootKitViewController+SendPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQAIOChatTootKitViewController+SendPicture.h"; sourceTree = "<group>"; };
+		C5D004661D770101000C018B /* QQPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QQPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D004691D770101000C018B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		C5D0046B1D770101000C018B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		C5D0046F1D770101000C018B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D004711D770101000C018B /* QQPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQPlugin.h; sourceTree = "<group>"; };
+		C5D004721D770101000C018B /* QQPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQPlugin.m; sourceTree = "<group>"; };
+		C5D004751D770101000C018B /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		C5D004761D770101000C018B /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		C5D004781D770101000C018B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C5D0048A1D77D32E000C018B /* MQAIOSelfInfoViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQAIOSelfInfoViewController2.h; sourceTree = "<group>"; };
+		C5D0048F1D780DF6000C018B /* MQAIOChatTootKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQAIOChatTootKitViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5D004631D770101000C018B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D0046A1D770101000C018B /* AppKit.framework in Frameworks */,
+				C5D0046C1D770101000C018B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5D0045D1D770101000C018B = {
+			isa = PBXGroup;
+			children = (
+				C5D0046D1D770101000C018B /* QQPlugin */,
+				C5D004681D770101000C018B /* Frameworks */,
+				C5D004671D770101000C018B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5D004671D770101000C018B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5D004661D770101000C018B /* QQPlugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5D004681D770101000C018B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D004691D770101000C018B /* AppKit.framework */,
+				C5D0046B1D770101000C018B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D0046D1D770101000C018B /* QQPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				C5D004711D770101000C018B /* QQPlugin.h */,
+				C5D004721D770101000C018B /* QQPlugin.m */,
+				C5D004801D7748CC000C018B /* HookClasses */,
+				C5D0047F1D7748AA000C018B /* Headers */,
+				C5D004741D770101000C018B /* JRSwizzle */,
+				C5D0046E1D770101000C018B /* Supporting Files */,
+			);
+			path = QQPlugin;
+			sourceTree = "<group>";
+		};
+		C5D0046E1D770101000C018B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0046F1D770101000C018B /* Info.plist */,
+				C5D004781D770101000C018B /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5D004741D770101000C018B /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C5D004751D770101000C018B /* JRSwizzle.h */,
+				C5D004761D770101000C018B /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		C5D0047F1D7748AA000C018B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C5D0048A1D77D32E000C018B /* MQAIOSelfInfoViewController2.h */,
+				C5D0048F1D780DF6000C018B /* MQAIOChatTootKitViewController.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		C5D004801D7748CC000C018B /* HookClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C5D004901D780E00000C018B /* BusyStatus */,
+				C5D004921D780F13000C018B /* SendPicture */,
+			);
+			path = HookClasses;
+			sourceTree = "<group>";
+		};
+		C5D004901D780E00000C018B /* BusyStatus */ = {
+			isa = PBXGroup;
+			children = (
+				C5AA7A751D8AFA1300210A09 /* MQAIOSelfInfoViewController2+BusyStatus.h */,
+				C5AA7A741D8AFA1300210A09 /* MQAIOSelfInfoViewController2+ BusyStatus.m */,
+			);
+			name = BusyStatus;
+			sourceTree = "<group>";
+		};
+		C5D004921D780F13000C018B /* SendPicture */ = {
+			isa = PBXGroup;
+			children = (
+				C5AA7A781D8AFA1C00210A09 /* MQAIOChatTootKitViewController+SendPicture.h */,
+				C5AA7A771D8AFA1C00210A09 /* MQAIOChatTootKitViewController+ SendPicture.m */,
+			);
+			name = SendPicture;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5D004651D770101000C018B /* QQPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D0047C1D770101000C018B /* Build configuration list for PBXNativeTarget "QQPlugin" */;
+			buildPhases = (
+				C5D004621D770101000C018B /* Sources */,
+				C5D004631D770101000C018B /* Frameworks */,
+				C5D004641D770101000C018B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQPlugin;
+			productName = QQPlugin;
+			productReference = C5D004661D770101000C018B /* QQPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5D0045E1D770101000C018B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jobs;
+				TargetAttributes = {
+					C5D004651D770101000C018B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C5D004611D770101000C018B /* Build configuration list for PBXProject "QQPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C5D0045D1D770101000C018B;
+			productRefGroup = C5D004671D770101000C018B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5D004651D770101000C018B /* QQPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5D004641D770101000C018B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D004791D770101000C018B /* PrefixHeader.pch in Resources */,
+				C5D004701D770101000C018B /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5D004621D770101000C018B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AA7A791D8AFA1C00210A09 /* MQAIOChatTootKitViewController+ SendPicture.m in Sources */,
+				C5AA7A761D8AFA1300210A09 /* MQAIOSelfInfoViewController2+ BusyStatus.m in Sources */,
+				C5D004771D770101000C018B /* JRSwizzle.m in Sources */,
+				C5D004731D770101000C018B /* QQPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C5D0047A1D770101000C018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C5D0047B1D770101000C018B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		C5D0047D1D770101000C018B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QQPlugin/PrefixHeader.pch;
+				INFOPLIST_FILE = QQPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.QQPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C5D0047E1D770101000C018B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QQPlugin/PrefixHeader.pch;
+				INFOPLIST_FILE = QQPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poboke.QQPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5D004611D770101000C018B /* Build configuration list for PBXProject "QQPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D0047A1D770101000C018B /* Debug */,
+				C5D0047B1D770101000C018B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D0047C1D770101000C018B /* Build configuration list for PBXNativeTarget "QQPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5D0047D1D770101000C018B /* Debug */,
+				C5D0047E1D770101000C018B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5D0045E1D770101000C018B /* Project object */;
+}
